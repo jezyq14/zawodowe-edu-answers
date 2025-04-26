@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "PDF Viewer",
+    "version": "1.0",
+    "description": "Improves the PDF viewer experience.",
+    "permissions": [],
+    "host_permissions": ["https://zawodowe.edu.pl/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://zawodowe.edu.pl/*"],
+            "js": ["apply.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
